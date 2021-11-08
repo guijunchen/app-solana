@@ -1,0 +1,20 @@
+[package]
+name = "app-solana"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+solana-program = "1.7.9"
+thiserror = "1.0.24"
+borsh = "0.9.1"
+spl-token = "3.2.0"
+spl-associated-token-account = "1.0.3"
+
+# [dev-dependencies]
+# solana-program-test = "=1.7.9"
+# solana-sdk = "=1.7.9"
+
+[lib]
+crate-type = ["lib", "cdylib"]
